@@ -21,6 +21,14 @@ body {
 
 }
 
+.buttonList {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonList>* {
+    margin: 5px;
+}
 .singleBox {
     border: 0.5px solid black;
 

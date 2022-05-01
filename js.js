@@ -2,6 +2,10 @@
 
 document.getElementById("ten").addEventListener("click", start);
 document.getElementById("clear").addEventListener("click", clearBoard);
+document.getElementById("black").addEventListener("click", changeColorBlack)
+// document.getElementById("red").addEventListener("click", changeColorRed)
+// document.getElementById("green").addEventListener("click", changeColorGreen)
+// document.getElementById("blue").addEventListener("click", changeColorBlue)
 
 // function adding(x,y){
 //     let total = (x) + y 
@@ -23,7 +27,7 @@ document.getElementById("clear").addEventListener("click", clearBoard);
 function start () {
     let num = createGrid();
     grid (num);
-    changeColor();
+    changeColorBlack();
 }
 
 
@@ -83,12 +87,50 @@ function clearBoard (container) {
 
 
 
-function changeColor() {
+function changeColorBlack() {
 
     document.querySelectorAll(".singleBox").forEach(oneBox => {
         oneBox.addEventListener("mouseover", () => {
             oneBox.style.backgroundColor = "black"
         })
     })
+    document.getElementById("black").style.backgroundColor = "black"
+    document.getElementById("black").style.color = "white"
 }
+
+
+// function changeColorRed() {
+
+//     document.querySelectorAll(".singleBox").forEach(oneBox => {
+//         oneBox.addEventListener("mouseover", () => {
+//             oneBox.style.backgroundColor = "red"
+//         })
+//     })
+//     document.getElementById("red").style.backgroundColor = "red"
+//     document.getElementById("red").style.color = "white"
+// }
+
+
+// function changeColorGreen() {
+
+//     document.querySelectorAll(".singleBox").forEach(oneBox => {
+//         oneBox.addEventListener("mouseover", () => {
+//             oneBox.style.backgroundColor = "green"
+//         })
+//     })
+//     document.getElementById("green").style.backgroundColor = "green"
+//     document.getElementById("green").style.color = "white"
+// }
+
+
+// function changeColorBlue() {
+
+//     document.querySelectorAll(".singleBox").forEach(oneBox => {
+//         oneBox.addEventListener("mouseover", () => {
+//             oneBox.style.backgroundColor = "blue"
+//         })
+//     })
+//     document.getElementById("blue").style.backgroundColor = "blue"
+//     document.getElementById("blue").style.color = "white"
+// }
 
