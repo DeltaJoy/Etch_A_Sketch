@@ -3,19 +3,29 @@ body {
     box-sizing: border-box;
 }
 
+.etchASketch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 10px;
+}
 .container {
     display: grid;
-    width: 90%;
-    height: 100vh;
+    width: 760px;
+    height: 760px;
     padding: 3rem;
-    border: 0.5px solid black;
-    background-color: lightgreen;
+    border: solid 1px black;
    
 
 }
 
 .singleBox {
     border: 0.5px solid black;
+
  
 }
+
+
 
